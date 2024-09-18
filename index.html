@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрацювання теми Git</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dfe47f;
+            margin: 0;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .certificate {
+            text-align: center;
+        }
+        .certificate img {
+            max-width: 50%;
+            height: auto;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1>Опрацювання теми Git</h1>
+
+    <h2>Що таке системи контролю версій та Git</h2>
+    <p>
+        <strong>Система контролю версій (VCS)</strong> – це програмне забезпечення, яке дозволяє відстежувати зміни у файлах і підтримувати історію їх змін. 
+        Це корисно як для індивідуальних розробників, так і для команд, оскільки VCS дозволяє спільно працювати над проектами, зберігаючи версії коду та можливість повернутись до попередніх версій у разі помилок.
+    </p>
+    <p>
+        <strong>Git</strong> – одна з найпопулярніших систем контролю версій, розроблена Лінусом Торвальдсом у 2005 році. Вона відрізняється високою швидкістю роботи, 
+        гнучкістю та можливістю працювати як з локальними, так і з віддаленими репозиторіями. Git використовується для управління версіями у програмуванні та інших сферах, де необхідно відстежувати зміни файлів.
+    </p>
+
+    <h2>Основні можливості та переваги використання Git</h2>
+    <ul>
+        <li><strong>Відстеження змін:</strong> Git дозволяє бачити всю історію змін кожного файлу, хто і коли зробив правки.</li>
+        <li><strong>Робота в команді:</strong> Git дозволяє декільком розробникам працювати над одним проектом, не заважаючи один одному.</li>
+        <li><strong>Локальне збереження історії:</strong> На відміну від багатьох інших систем, Git зберігає повну історію проекту локально.</li>
+        <li><strong>Робота з віддаленими репозиторіями:</strong> Можливість синхронізації з віддаленими серверами, такими як GitHub чи GitLab.</li>
+        <li><strong>Гілки (Branches):</strong> Git дозволяє створювати окремі гілки для роботи над новими функціями, що полегшує інтеграцію змін без порушення основної гілки.</li>
+        <li><strong>Конфлікти та їх вирішення:</strong> Якщо двоє людей вносять зміни до одного файлу, Git повідомляє про конфлікт і дозволяє вирішити його.</li>
+    </ul>
+
+    <h2>10 базових команд роботи в Git</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+		<thead>
+			<tr>
+				<th>Команда</th>
+				<th>Опис</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><strong>git init</strong></td>
+				<td>Ініціалізує новий локальний репозиторій у поточній директорії.</td>
+			</tr>
+			<tr>
+				<td><strong>git clone &lt;url&gt;</strong></td>
+				<td>Копіює існуючий віддалений репозиторій на ваш комп'ютер.</td>
+			</tr>
+			<tr>
+				<td><strong>git add &lt;file&gt;</strong></td>
+				<td>Додає файл до індексації, щоб включити його в наступний коміт.</td>
+			</tr>
+			<tr>
+				<td><strong>git commit -m "повідомлення"</strong></td>
+				<td>Фіксує зміни в репозиторії з описом.</td>
+			</tr>
+			<tr>
+				<td><strong>git status</strong></td>
+				<td>Відображає стан репозиторію: які файли були змінені, які потребують коміту.</td>
+			</tr>
+			<tr>
+				<td><strong>git log</strong></td>
+				<td>Показує історію комітів у репозиторії.</td>
+			</tr>
+			<tr>
+				<td><strong>git push</strong></td>
+				<td>Відправляє локальні зміни на віддалений репозиторій.</td>
+			</tr>
+			<tr>
+				<td><strong>git pull</strong></td>
+				<td>Оновлює локальний репозиторій, отримуючи зміни з віддаленого.</td>
+			</tr>
+			<tr>
+				<td><strong>git branch</strong></td>
+				<td>Відображає існуючі гілки або дозволяє створити нову.</td>
+			</tr>
+			<tr>
+				<td><strong>git merge &lt;branch&gt;</strong></td>
+				<td>Об'єднує гілку з іншою гілкою.</td>
+			</tr>
+		</tbody>
+	</table>
+
+    <h2>Сертифікат курсу по Git</h2>
+    <div class="certificate">
+        <img src="certificate.png" alt="Сертифікат з курсу Git">
+    </div>
+
+    <h2>Джерела інформації по темі</h2>
+    <ul>
+        <li><a href="https://git-scm.com/doc" target="_blank">Офіційна документація Git</a></li>
+        <li><a href="https://git-scm.com/book/en/v2" target="_blank">Pro Git by Scott Chacon and Ben Straub</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
