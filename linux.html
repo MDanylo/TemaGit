@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрацювання теми Linux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dfe47f;
+            margin: 0;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .certificate {
+            text-align: center;
+        }
+        .certificate img {
+            max-width: 50%;
+            height: auto;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        nav .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav .btn:hover {
+        background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+
+    <header>
+        <nav>
+            <a href="git.html" class="btn">Git</a>
+            <a href="linux.html" class="btn">Linux</a>
+        </nav>
+    </header>
+
+    <h1>Операційна система GNU/Linux</h1>
+
+    <h2>Коротка інформація про GNU/Linux</h2>
+    <p>
+        <strong>GNU/Linux</strong> — це операційна система на базі ядра Linux, яка складається з вільного програмного забезпечення. Її можна використовувати як для персонального, так і для серверного застосування. Однією з ключових особливостей GNU/Linux є її гнучкість, модульність та висока стабільність.
+    </p>
+
+    <h2>Найбільш популярні дистрибутиви GNU/Linux</h2>
+    <ul>
+        <li><strong>Ubuntu</strong>: один із найбільш популярних дистрибутивів, відомий своєю простотою для початківців.</li>
+        <li><strong>Debian</strong>: стабільний дистрибутив, на основі якого розроблені багато інших.</li>
+        <li><strong>Fedora</strong>: сучасний дистрибутив, який випускає найсвіжіші новинки.</li>
+        <li><strong>Arch Linux</strong>: дистрибутив для досвідчених користувачів, який надає повний контроль над системою.</li>
+        <li><strong>CentOS</strong>: серверний дистрибутив на базі Red Hat.</li>
+        <li><strong>Linux Mint</strong>: дистрибутив, орієнтований на зручність користування.</li>
+    </ul>
+
+    <h2>Приклади команд роботи в Linux CLI</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Команда</th>
+                    <th>Опис</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>pwd</strong></td>
+                    <td>Показує поточний робочий каталог.</td>
+                </tr>
+                <tr>
+                    <td><strong>echo</strong></td>
+                    <td>Виводить текст або значення змінної в термінал.</td>
+                </tr>
+                <tr>
+                    <td><strong>ls</strong></td>
+                    <td>Виводить список файлів у поточному каталозі.</td>
+                </tr>
+                <tr>
+                    <td><strong>cd</strong></td>
+                    <td>Змінює поточний каталог.</td>
+                </tr>
+                <tr>
+                    <td><strong>touch</strong></td>
+                    <td>Створює новий порожній файл.</td>
+                </tr>
+                <tr>
+                    <td><strong>mkdir</strong></td>
+                    <td>Створює новий каталог.</td>
+                </tr>
+                <tr>
+                    <td><strong>cp</strong></td>
+                    <td>Копіює файли або каталоги.</td>
+                </tr>
+                <tr>
+                    <td><strong>mv</strong></td>
+                    <td>Переміщує або перейменовує файли/каталоги.</td>
+                </tr>
+                <tr>
+                    <td><strong>rm</strong></td>
+                    <td>Видаляє файли або каталоги.</td>
+                </tr>
+                <tr>
+                    <td><strong>history</strong></td>
+                    <td>Показує історію використаних команд.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section id="bash-script">
+            <h2>BASH-сценарій авторизації</h2>
+            <pre>
+            <code>
+            #!/bin/bash
+    
+            echo "Введіть ваше ім'я користувача:"
+            read username
+            echo "Введіть пароль:"
+            read -s password
+    
+            if [[ $username == "admin" && $password == "12345" ]]; then
+            echo "Авторизація успішна!"
+            else
+            echo "Невірне ім'я користувача або пароль."
+            fi
+            </code>
+            </pre>
+        </section>
+
+    <h2>Джерела інформації по темі</h2>
+    <ul>
+        <li><a href="https://www.kernel.org/" target="_blank">Офіційний сайт ядра Linux</a></li>
+        <li><a href="https://www.gnu.org/" target="_blank">Офіційний сайт GNU</a></li>
+        <li><a href="https://ubuntu.com/" target="_blank">Офіційний сайт Ubuntu</a></li>
+        <li><a href="https://linuxmint.com/" target="_blank">Офіційний сайт Linux Mint</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
